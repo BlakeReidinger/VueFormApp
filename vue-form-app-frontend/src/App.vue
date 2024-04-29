@@ -1,17 +1,24 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="header-section">
+    <img src="./assets/logo.png" alt="vue_logo" class="header-img" />
+    <h1 class="header-title">Vue Form</h1>
+    <img src="./assets/logo.png" alt="vue_logo" class="header-img" />
+  </div>
+  <hr />
+  <h2>Create Ticket</h2>
+  <VueForm />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import VueForm from "./components/VueForm";
+import "./App.css";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    VueForm,
+  },
+};
 </script>
 
 <style>
